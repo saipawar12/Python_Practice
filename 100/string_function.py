@@ -1,28 +1,49 @@
-#str
-num=123
-s=str(num)
-print(type(s))
-#len()
-name="sai sachil pawar"
-print(len(name))
-#index
-print(name.index("a"))
-#find()
-print(name.find("z"))
-#count
-print(name.count("S"))
-#uppercase
-print(name.upper())
-#lowercase
-print(name.lower())
-#swapcase
-print("swapcase-",name.swapcase())
-#tittle
-print(name.title())
-#capitalize
-print(name.capitalize())
-#startswith()
-print(name.startswith("sai"))
-#endswith
-print(name.endswith("Pawar"))
-
+# #str
+# num=123
+# s=str(num)
+# print(type(s))
+# #len()
+# name="sai sachil pawar12"
+# print(len(name))
+# #index
+# print(name.index("a"))
+# #find()
+# print(name.find("z"))
+# #count
+# print(name.count("S"))
+# #uppercase
+# print(name.upper())
+# #lowercase
+# print(name.lower())
+# #swapcase
+# print("swapcase-",name.swapcase())
+# #tittle
+# print(name.title())
+# #capitalize
+# print(name.capitalize())
+# #startswith()
+# print(name.startswith("sai"))
+# #endswith
+# print(name.endswith("Pawar"))
+# #isupper
+# print(name.isupper())
+# #islower
+# print(name.islower())
+# #isnum
+# print(name.isnumeric())
+# #isdigit
+# print(name.isdigit())
+# #isspace
+# print(name.isspace())
+# #isalpha
+# print(name.isalpha())
+# #isalnum
+# namee="sai12"
+# print(namee.isalnum())
+#split
+# s1="Python is programming language"
+# l=s1.split()
+# print(l)
+# #join
+# str1=" ".join(l)
+# print(str1)
