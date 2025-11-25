@@ -16,6 +16,7 @@
 #     s1=s1+i
 #     print(s1)
 # print(s1)
+
 #WAP to print the count of e from given string without using count function
 # s="ITVedant Pune"
 # count =0
@@ -23,12 +24,14 @@
 #     if (i=="e"):
 #         count +=1
 # print(count)
+
 #WAP to reverse to given string without using slicing
 # reverse_string=""
 # for i in s:
 #     reverse_string=i+reverse_string
 #     print(reverse_string)
 # print(reverse_string)
+
 #WAP swap two variables
 #WAP write a program to check palimdrome or not
 # s="mom"
@@ -58,13 +61,27 @@
 #         sum +=int(i)
 # print("Numbers from string:", result)
 # print("addition of this number:",sum)
+
 #WAP to print below pattern revervse 
 # string="Python is programming language"
 # reverse_string=string[::-1]
 # print(reverse_string)
 
-string = "Python is programming language"
-separate= string.split() 
-reverse = separate[::-1] 
-result = " ".join(reverse)
+s="Python is programming language"
+words = s.split()
+result = ""
+for w in words:
+    rev = ""
+    for ch in w:
+        rev = ch + rev
+    result = result + rev + " "
 print(result)
+
+
+# string = "Python is programming language"
+# separate= string.split() 
+# reverse = separate[::-1] 
+# result = " ".join(reverse)
+# print(result)
+
+
