@@ -18,7 +18,7 @@
 # print(s1)
 
 #WAP to print the count of e from given string without using count function
-# s="ITVedant Pune"
+# s="ITVedant "
 # count =0
 # for i in s:
 #     if (i=="e"):
@@ -29,7 +29,7 @@
 # reverse_string=""
 # for i in s:
 #     reverse_string=i+reverse_string
-#     print(reverse_string)
+# print(reverse_string)
 # print(reverse_string)
 
 #WAP swap two variables
@@ -66,22 +66,36 @@
 # string="Python is programming language"
 # reverse_string=string[::-1]
 # print(reverse_string)
+# s = "Python is programming language"
+# separate = s.split()
+# result = ""
+# for i in separate:
+#     rev = ""
+#     for j in i:
+#         rev = j + rev      # reverse each word
+#     result += rev + " "
+# print(result)
 
-s="Python is programming language"
-words = s.split()
-result = ""
-for w in words:
-    rev = ""
-    for ch in w:
-        rev = ch + rev
-    result = result + rev + " "
-print(result)
 
-
-# string = "Python is programming language"
+# s = "Python is programming language"
 # separate= string.split() 
 # reverse = separate[::-1] 
 # result = " ".join(reverse)
 # print(result)
 
+# num=1234
+# count=0
+# temp=num
+# while temp>0:
+#     temp //=10
+#     count +=1
+# print(count)
+
+
+s="ITvedant"
+count=0
+for i in s:
+    if i in "AEIOUaeiou":
+        count +=1
+print(count)
 
