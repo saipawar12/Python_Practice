@@ -1,32 +1,31 @@
-#Tuple
-fruits=("Mango","Apple","Banana","cherry",34,"Watermelon")
-rollno=(1,2,3,4,5)
-status=("True","false","True")
-print(type(fruits))
+T=(1,2,3.5,'hello',[10,20,30])
+#indexing
+# print(type(T))
+# print(type(T[4]))
+# print(T[0])
+# print(T[1])
+# print(T[2])
+# print(T[3])
+# print(T[4])
+# print(T[-1])
+# print(T[-2])
+# print(T[-3])
+# print(T[-4])
+# print(T[1])
+# print(T[2])
+# print(T[3])
+# print(T[-5])
+# print(T[-5:-2])
+# print(T[-3])
 
-print("****************Acess the list element***************")
-print(fruits)
+#for loop
+# for i in T:
+#     print(i)
 
-
-print(fruits[1])
-for i in fruits:
-    print(i)
-
-print("*****************Slicing***************")
-print(fruits[1:5])
-
-#change using list(by typecasting)
-print("Change using list")
-x=fruits
-print(type(x))
-x=list(fruits)
-print(type(x))
-
-x.insert(1,"BBB")
-x.append("CCC")
-
-fruits=tuple(x)
-print(type(fruits))
-
+#while loop
+i = 0
+while i < len(T):
+    print(T[i])
+    i += 1
 
 

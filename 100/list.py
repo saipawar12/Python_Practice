@@ -32,13 +32,14 @@
 # for i in l:
 #     print(i)
 # #while loop
-# i = 0
-# while  < len(l):
-#     print(l[i])
-#     i =+ 1
+l=[10,20,30,10,40,'hello']
+i = 0
+while i < len(l):
+    print(l[i])
+    i += 1
 
 # 3)slicing
-l=[10,20,30,10,40,'hello']
+# l=[10,20,30,10,40,'hello']
 # print(l[0:3])
 # print(l[2:5])
 # print(l[4][0:3])
@@ -56,9 +57,9 @@ l=[10,20,30,10,40,'hello']
 # print(l)
 # l.remove(10)
 # print(l)
-l2=["p439","sai"]
-l.extend(l2)
-print(l)
+# l2=["p439","sai"]
+# l.extend(l2)
+# print(l)
 # print("Modify")
 # fruits[1]="Peru"
 # print(fruits)
