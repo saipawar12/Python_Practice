@@ -93,9 +93,7 @@
 
 
 s="ITvedant"
-count=0
 for i in s:
     if i in "AEIOUaeiou":
-        count +=1
-print(count)
+        print(i)
 
