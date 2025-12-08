@@ -1,27 +1,43 @@
-student={
+d={
          "rollno":40,
          "name":"Ranjit",
          "class":"10th",
          "marks":35
 }
-print(student)
-print(student["class"])
+# print(d)
+# print(type(d))
 
-print(student["name"])
-print("************change**************")
-student["name"]="Sai"
-print(student)
+# #acessing
+# print(d["name"])
+# #update
+# d["name"]="Sai"
+# print(d)
+# #add
+# d["education"]="B.tech"
+# print(d)
+# #del
+# del d["marks"]
+# print(d)
 
-print(student.keys())
-print(student.values())
-print(student)
-
-student.pop("class")
-print(student)
-print(student.get("name"))
-
-
-
-
-
+#build in method in dictionary
+#1)dict
+# d=dict()
+# print(type(d))
+#2)len
+# print(len(d))
+#3)get
+# print(d.get("name"))
+#4)pop
+# print(d.pop("name"))
+#5)popitem
+# print(d.popitem())
+#6)clear()
+# d.clear()
+# print(d)
+#7)key()
+print(d.keys())
+#8)values
+print(d.values())
+#9)items
+print(d.items())
 
