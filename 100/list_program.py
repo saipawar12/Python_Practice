@@ -49,7 +49,17 @@
 # print(unique)
 
 
-
+#Create two list one contains even numbers and second contains odd numbers from given list/ accept list.
+l=[2,56,32,11,77,65,34,89,33]
+even=[]
+odd=[]
+for i in l:
+    if i%2==0:
+        even.append(i)
+    else:
+        odd.append(i)
+print("even number",even)
+print("odd number",odd)
 
 
 

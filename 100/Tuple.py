@@ -47,7 +47,7 @@
 # print(t.index(10))
 # #8)sorted
 t=(100,20,30,10,20,54,50)
-# t1=sorted(t)
+# t1=tuple(sorted(t))
 # print(t1)
 #reverse
 # t1=sorted(t,reverse=True)

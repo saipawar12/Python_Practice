@@ -1,26 +1,11 @@
-fruits={"Mango","Apple","banana",66,"orange","kivi"}
-rollno={2,4,6,1,7,8,}
+# set1=set()
+# print(type(set1))
+# set1={1}
+# print(type(set1))
 
-print(type(fruits))
-print(fruits)
+set1={1,2,3.5,"hello",1,1,11,3,5,2,2,3,4,11}
+print(set1)
 
-for i in fruits:
-    print(i)
-
-fruits.add("AAA")
-print(fruits)
-
-fruits.remove("AAA")
-print(fruits)
-
-fruits.pop()
-print(fruits)
-
-fruits.update(rollno)
-print(fruits)
-
-fruits.clear()
-print(fruits)
     
 
     
