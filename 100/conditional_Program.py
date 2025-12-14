@@ -58,12 +58,69 @@
 #     print("consonant")
 
 #Take a character and check whether it’s uppercase, lowercase, a digit, or a special character. 
-char=str(input("Enter character:"))
-if char.isupper():
-    print("uppercase")
-elif char.islower():
-    print("Lowercase")
-elif char.isdigit():
-    print("digit")
+# char=str(input("Enter character:"))
+# if char.isupper():
+#     print("uppercase")
+# elif char.islower():
+#     print("Lowercase")
+# elif char.isdigit():
+#     print("digit")
+# else:
+#     print("special charcter")
+
+#Take three sides and check if they form a valid triangle.
+# a=int(input("Enter side a:"))
+# b=int(input("Enter side b:"))
+# c=int(input("Enter side c:"))
+# if a+b >c and a+c >b and b+c >a:
+#     print("valid triengle")
+# else:
+#     print("not")
+
+#If the sides form a valid triangle, determine whether it is equilateral, isosceles, or scalene. 
+# a=int(input("Enter side a:"))
+# b=int(input("Enter side b:"))
+# c=int(input("Enter side c:"))
+# if a+b >c and a+c >b and b+c >a:
+#     if a==b==c:
+#         print("Equilateral")
+#     elif a==b or a==c or b==c:
+#         print("isosceles")
+#     else:
+#         print("Scalene")
+# else:
+#     print("not valid triangle")
+
+#Take marks (0–100) and print the corresponding grade (A/B/C/D/F). 
+# marks=int(input("Enter marks:"))
+# if marks>=95:
+#     print("Grade A")
+# elif marks>=90:
+#     print("Grade B")
+# elif marks >=80:
+#     print("Grade C")
+# elif marks>=75:
+#     print("Grade D")
+# else:
+#     print("Grade F")
+    
+#Check if one of two given numbers is a multiple of the other
+# num1 = int(input("Enter the first number: "))
+# num2 = int(input("Enter the second number: "))
+# if num1 % num2 == 0:
+#     print("1st num is multiple of 2nd")
+# elif num2 % num1 == 0:
+#     print("2nd num is multiple of 1st")
+# else:
+#     print("Neither number is a multiple of the other.")
+
+#Take the hour of the day (0–23) and print “Good Morning”, “Good Afternoon”, “Good Evening”, or “Good Night”.
+hour=int(input("Enter the hour:"))
+if 5 <= hour < 12:
+    print("Good morning")
+elif 12 <= hour < 17:
+    print("Good afternoon")
+elif 17 <= hour < 21:
+    print("Good evening")
 else:
-    print("special charcter")
+    print("Good night")
