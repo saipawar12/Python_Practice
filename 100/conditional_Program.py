@@ -115,12 +115,74 @@
 #     print("Neither number is a multiple of the other.")
 
 #Take the hour of the day (0–23) and print “Good Morning”, “Good Afternoon”, “Good Evening”, or “Good Night”.
-hour=int(input("Enter the hour:"))
-if 5 <= hour < 12:
-    print("Good morning")
-elif 12 <= hour < 17:
-    print("Good afternoon")
-elif 17 <= hour < 21:
-    print("Good evening")
+# hour=int(input("Enter the hour:"))
+# if 5 <= hour < 12:
+#     print("Good morning")
+# elif 12 <= hour < 17:
+#     print("Good afternoon")
+# elif 17 <= hour < 21:
+#     print("Good evening")
+# else:
+#     print("Good night")
+
+#Check voting eligibility for a given age (18+).
+# age=18
+# if age>=18:
+#     print("eligible for voting")
+# else:
+#     print("Not eligible")
+
+#Take two numbers and determine whether both are even, both are odd, or one is even and one is odd.
+# a=30
+# b=40
+# if a%2==0 and b%2==0:
+#     print("both are even")
+# elif a%2==0 and b%2!=0:
+#     print("a is even and b is odd")
+# elif a%2!=0 and b%2==0:
+#     print("a is odd and b is even")
+# else:
+#     print(" both are odd")
+
+#Take an alphabet character and check if it lies between ‘a’ and ‘m’ or ‘n’ and ‘z’. 
+# char='q'
+# if 'a' <= char <= 'm':
+#     print(f"{char} is between 'a' and 'm'")
+# elif 'n' <= char <= 'z':
+#     print(f"{char} is between 'n' and 'z'")
+# else:
+#     ("no lies between ")
+
+# Take a day number (1–7) and print the corresponding day name.
+# num = 3  
+# if num == 1:
+#     print("Monday")
+# elif num == 2:
+#     print("Tuesday")
+# elif num == 3:
+#     print("Wednesday")
+# elif num == 4:
+#     print("Thursday")
+# elif num == 5:
+#     print("Friday")
+# elif num == 6:
+#     print("Saturday")
+# elif num == 7:
+#     print("Sunday")
+# else:
+#     print("Invalid number!.")
+
+# Take a month number (1–12) and print the number of days in that month (ignore leap years). 
+month_no=int(input("Enter month number:"))
+if month_no in [1,3,5,7,8,10,12]:
+    print("31 days")
+elif month_no in [4,6,6,11]:
+    print("30 days")
+elif month_no==2:
+    print("28 days")
 else:
-    print("Good night")
+    print("invalid!")
+
+
+
+
