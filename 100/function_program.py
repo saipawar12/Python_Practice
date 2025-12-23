@@ -1,10 +1,10 @@
 #WAP to check number is even or odd
-# def even_odd(n):
-#     if n%2==0:
-#         print("even")
-#     else:
-#         print("odd")
-# even_odd(39)
+def even_odd(n):
+    if n%2==0:
+        print("even")
+    else:
+        print("odd")
+even_odd(39)
 
 #WAP to create function armstrong number
 # def arm(n):
@@ -34,16 +34,19 @@
 # prime(23)
 
 #WAP to print 1 to 100 prime number
-def prime_number():
-    for i in range(2,101):
-        is_prime=True
-        for j in range(2,i):
-            if i%j==0:
-                is_prime=False
-                break
-        if is_prime:
-            print(i)
-prime_number()
+# def prime_number():
+#     for i in range(2,101):
+#         is_prime=True
+#         for j in range(2,i):
+#             if i%j==0:
+#                 is_prime=False
+#                 break
+#         if is_prime:
+#             print(i)
+# prime_number()
+
+
+
 
 
 

@@ -13,6 +13,7 @@
 #     print("Hello")
 # greet()
 
+
 #parameter
 # def square(n):
 #     return n**2
@@ -51,13 +52,13 @@
 #     return a*x
 # print(fun())
 #3)global keyword
-x=100
-def hello():
-    global x
-    x=50
-    print(x)
-hello()
-print(x)
+# x=100
+# def hello():
+#     global x
+#     x=50
+#     print(x)
+# hello()
+# print(x)
 
 
 
