@@ -7,6 +7,8 @@
 #         print("Hello","Good morning")
 # p=Person()
 # p.show()
+
+
 #(***************************************************object*********************************************************)
 #2)object
 # class Student:
@@ -46,21 +48,46 @@
 # obj= Employee('Emma', 23, 7500)
 # obj.show()
 
+
 #(***************************************************distructor*********************************************************)
-class Student:
-    def __init__(self, name):
-        print('Inside Constructor')
-        self.name = name
-    def show(self):
-        print('Hello, my name is', self.name)
-    # destructor
-    def __del__(self):
-        print('Object destroyed')
-# create object
-s1 = Student('Sai')
-s1.show()
-# delete object
-del s1
+# class Student:
+#     def __init__(self, name):
+#         print('Inside Constructor')
+#         self.name = name
+#     def show(self):
+#         print('Hello, my name is', self.name)
+#     # destructor
+#     def __del__(self):
+#         print('Object destroyed')
+# # create object
+# s1 = Student('Sai')
+# s1.show()
+# # delete object
+# del s1
+
+# import time
+# class Student:
+#     # constructor
+#     def __init__(self, name):
+#         print('Inside Constructor')
+#         self.name = name
+#     def show(self):
+#         print('Hello, my name is', self.name)
+#     # destructor
+#     def __del__(self):
+#         print('Object destroyed')
+# # create object
+# s1 = Student('Emma')
+# # create new reference
+# # both reference points to the same object
+# s2 = s1
+# s1.show()
+# # delete object reference s1
+# del s1
+# # add sleep and observe the output
+# time.sleep(5)
+# print('After sleep')
+# s2.show()
 
 
 
