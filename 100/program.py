@@ -104,14 +104,19 @@
 #     print(i*n)
 
 #14)
+# s="a3b2c1"
+# output=""
+# for i in range(0,len(s),2):
+#     char=s[i]
+#     num=int(s[i+1])
+#     output+=char*num
+# print(output)
 
-s="a3b2c1"
-output=""
-for i in range(0,len(s),2):
-    char=s[i]
-    num=int(s[i+1])
-    output+=char*num
-print(output)
+#15)
+for i in range(0,5,1):
+    for j in range(0,i+1,1):
+        print('*', end=' ')
+    print()
 
 
 

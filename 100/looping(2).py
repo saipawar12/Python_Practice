@@ -95,10 +95,18 @@
 # greatest = a if (a > b and a > c) else (b if b > c else c)
 # print("Greatest number is:", greatest)
 
-for i in range(10,0,-1):
-    print(i)
+# for i in range(10,0,-1):
+#     print(i)
+# i=50
+# while i>=1:
+#     print(i)
+#     i-=1
 
-i=50
-while i>=1:
+# for i in range(1,101):
+#     print(i)
+
+i=0
+while i<=100:
     print(i)
-    i-=1
+    
+    
