@@ -99,12 +99,19 @@
 
 
 #13)print the multiplication table og given number
-n=5
-for i in range(1,11):
-    print(i*n)
+# n=5
+# for i in range(1,11):
+#     print(i*n)
 
 #14)
 
+s="a3b2c1"
+output=""
+for i in range(0,len(s),2):
+    char=s[i]
+    num=int(s[i+1])
+    output+=char*num
+print(output)
 
 
 
