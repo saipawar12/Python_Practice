@@ -37,20 +37,23 @@ import re
 
 
 #WAp to check given mobile number is valid or not
-# mobile=input("Enter your number:")
-# num=re.fullmatch("[7-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]",mobile)
-# if num!=None:
-#     print("valid number")
-# else:
-#     print("not valid")
-
-#check given vahicle number is valid or not for maharashtra state
-num=input("Enter the vehicle number: ")
-vehicle_no=re.fullmatch("MH[0-9][0-9][A-Z][A-z][0-9][0-9][0-9][0-9]",num)  
-if vehicle_no!=None:
+mobile=input("Enter your number:")
+# num=re.fullmatch("[7-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]",mobile) 
+num=re.fullmatch("[7-9][0-9]{9}",mobile)
+if num!=None:
     print("valid number")
 else:
-    print("Not valid")
+    print("not valid")
+
+
+
+#check given vahicle number is valid or not for maharashtra state
+# num=input("Enter the vehicle number: ")
+# vehicle_no=re.fullmatch("MH[0-9][0-9][A-Z][A-z][0-9][0-9][0-9][0-9]",num)  
+# if vehicle_no!=None:
+#     print("valid number")
+# else:
+#     print("Not valid")
 
 # import re
 # num=input("Enter the vehicle number: ")

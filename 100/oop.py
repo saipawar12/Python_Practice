@@ -91,12 +91,23 @@
 
 
 #(***************************************************Polymorphism*********************************************************)
-def add(a,b):
-    c=a+b
-    print(c)
-def add(a,b,c):
-    d=a+b+c
-    print(d)
-add(2,3)
-add(2,4,5)
+# def add(a,b):
+#     c=a+b
+#     print(c)
+# def add(a,b,c):
+#     d=a+b+c
+#     print(d)
+# add(2,3)
+# add(2,4,5)
 
+#(***************************************************Abstraction*********************************************************)
+from abc import ABC,abstractmethod
+class Vehicle(ABC):
+    @abstractmethod
+    def start(self):
+        pass
+class Car(Vehicle):
+    def start(self):
+        print("Car Started...")
+obj=Car()
+obj.start()
