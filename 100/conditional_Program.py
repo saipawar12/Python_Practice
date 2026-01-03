@@ -173,16 +173,59 @@
 #     print("Invalid number!.")
 
 # Take a month number (1–12) and print the number of days in that month (ignore leap years). 
-month_no=int(input("Enter month number:"))
-if month_no in [1,3,5,7,8,10,12]:
-    print("31 days")
-elif month_no in [4,6,6,11]:
-    print("30 days")
-elif month_no==2:
-    print("28 days")
+# month_no=int(input("Enter month number:"))
+# if month_no in [1,3,5,7,8,10,12]:
+#     print("31 days")
+# elif month_no in [4,6,6,11]:
+#     print("30 days")
+# elif month_no==2:
+#     print("28 days")
+# else:
+#     print("invalid!")
+
+#Take a 3-digit number and check if all digits are distinct. 
+# num=int(input("Enter the number: "))
+# digit1=num//100
+# digit2=(num//10)%10
+# digit3=num%10
+# if digit1 != digit2 and digit1 != digit3 and digit2 != digit3:
+#     print("Digits are distinct")
+# else:
+#     print("Not distinct")
+
+#Take a 3-digit number and determine if the middle digit is the largest, smallest, or neither.
+# num=294
+# first=num//100
+# middle=(num//10)%10
+# third=num%10
+# if middle>first and middle>third:
+#     print("Middle is largest")
+# elif middle<first and middle<third:
+#     print("Middle is smallest")
+# else:
+#     print("neither smallor largest")
+
+#Take a 4-digit number and check if the first and last digits are equal. 
+# num=1231
+# first = num // 1000
+# last = num % 10
+# if first == last:
+#     print("first and last equal")
+# else:
+#     print("Not equal")
+
+#Check whether a given integer is single-digit, double-digit, or multi-digit. 
+# num=133
+# if num<10:
+#     print("Single digit")
+# elif 10<=num <=100:
+#     print("double digit")
+# else:
+#     print("Multi digit")
+
+#Check if a number is a multiple of 7 or ends with 7. 
+num = int(input("Enter a number: "))
+if num % 7 == 0 or num % 10 == 7:
+    print("The number is a multiple of 7 or ends with 7")
 else:
-    print("invalid!")
-
-
-
-
+    print("The number is NOT a multiple of 7 and does NOT end with 7")
