@@ -27,16 +27,46 @@
 # print("Hello")
 
 
+# try:
+#     a=int(input("Enter the value of a:"))
+#     b=int(input("Enter the value of b:"))
+#     print(a/b)
+# except ZeroDivisionError:
+#     print("We can't divisible by zero")
+# except ValueError:
+#     print("Enter the number only")
+# else:
+#     print("No exception")
+# finally:
+#     print("hello")
+
+# class AgeError(Exception):
+#     pass
+# try:
+#     age = int(input("Enter your age: "))
+#     if age < 18:
+#         raise AgeError("Age must be 18 or above")
+#     print("You are eligible")
+# except AgeError as e:
+#     print("Custom Exception:", e)
+# except ValueError:
+#     print("Please enter a valid age")
+# finally:
+#     print("Age verification completed")
+
+
+class InvalidAgeException(Exception):
+    pass
 try:
-    a=int(input("Enter the value of a:"))
-    b=int(input("Enter the value of b:"))
-    print(a/b)
-except ZeroDivisionError:
-    print("We can't divisible by zero")
+    age = int(input("Enter your age: "))
+    if age < 18:
+        raise InvalidAgeException("Invalid Age! Age must be 18 or above.")
+    print("You are eligible.")
+except InvalidAgeException as e:
+    print(e)
 except ValueError:
-    print("Enter the number only")
-else:
-    print("No exception")
+    print("Please enter a valid number.")
 finally:
-    print("hello")
+    print("Age check completed.")
+
 
