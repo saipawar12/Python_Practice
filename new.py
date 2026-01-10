@@ -16,19 +16,19 @@
 #     print("Zero")
 
 # #3. Count the number of vowels in a given string.
-# s = input()
-# count = 0
-# for ch in s:
-#     if ch in "aeiouAEIOU":
-#         count += 1
+# s="Saipawar"
+# count=0
+# for i in s:
+#     if i in "AEIOUaeiou":
+#         count +=1
 # print(count)
 
 
 # #4. Reverse a string without using inbuilt functions. 
-# s = input()
-# rev = ""
-# for ch in s:
-#     rev = ch + rev
+# s="python"
+# rev=""
+# for i in s:
+#     rev=i+rev
 # print(rev)
 
 
@@ -41,15 +41,15 @@
 
 
 # 6. Find the largest of three numbers. 
-a=57
-b=50
-c=90
-if a>b and a>c:
-    print(a)
-elif b>c:
-    print(b)
-else:
-    print(c)
+# a=57
+# b=50
+# c=90
+# if a>b and a>c:
+#     print(a)
+# elif b>c:
+#     print(b)
+# else:
+#     print(c)
 
 # 7. Convert Celsius temperature to Fahrenheit. 
 # c = float(input())
@@ -58,36 +58,35 @@ else:
 
 
 # 8. Find the factorial of a number using loop. 
-# n = int(input())
-# fact = 1
+# n=12
+# fact=1
 # for i in range(1,n+1):
-#     fact *= i
+#     fact *=i
 # print(fact)
 
-
 # 9. Generate Fibonacci series up to N terms. 
-# n = int(input())
-# a, b = 0, 1
+# n=int(input())
+# a,b=0,1
 # for i in range(n):
-#     print(a, end=" ")
-#     a, b = b, a+b
+#     print(a,end=" ")
+#     a,b=b,a+b
 
 
 # 10. Count digits in an integer.
-# n = int(input())
-# count = 0
-# while n > 0:
-#     count += 1
-#     n //= 10
+# n=1234
+# count=0
+# while n>0:
+#     count+=1
+#     n//=10
 # print(count)
 
 # 11. Calculate sum of digits of a number. 
-# n = int(input())
-# s = 0
-# while n > 0:
-#     s += n % 10
-#     n //= 10
-# print(s)
+# n=123
+# sum=0
+# while n>0:
+#     sum+=n%10
+#     n//=10
+# print(sum)
 
 
 # 12. Swap two numbers without using a third variable. 
@@ -97,7 +96,7 @@ else:
 
 
 # 13. Check if a number is prime. 
-# num=20
+# num=22
 # is_prime=True
 # for i in range(2,num):
 #     if num%i==0:
@@ -106,17 +105,17 @@ else:
 # if is_prime:
 #     print("prime")
 # else:
-#     print("not prime")
-
+#     print("not")
 
 # 14. Print all prime numbers in a given range. 
-# for n in range(1,51):
-#     if n > 1:
-#         for i in range(2,n):
-#             if n % i == 0:
-#                 break
-#         else:
-#             print(n)
+# for i in range(1,101):
+#     is_prime=True
+#     for j in range(2,i):
+#         if i%j==0:
+#             is_prime=False
+#             break
+#     if is_prime:
+#         print(i)
 
 
 # 15. Find the sum of natural numbers up to N. 
@@ -126,36 +125,48 @@ else:
 #     sum += i
 # print(sum)
 
+# n=20
+# sum=0
+# for i in range(1,n+1):
+#     sum+=i
+# print(sum)
+
 
 # 16. Find the LCM of two numbers. 
-# a,b = map(int,input().split())
-# lcm = max(a,b)
+# a=34
+# b=12
+# max_num=max(a,b)
 # while True:
-#     if lcm%a==0 and lcm%b==0:
-#         print(lcm)
+#     if max_num%a==0 and max_num%b==0:
+#         print(max_num)
 #         break
-#     lcm += 1
+#     max_num+=1
+
 
 
 # 17. Find the HCF of two numbers. 
-# a,b = map(int,input().split())
-# while b != 0:
-#     a, b = b, a % b
-# print(a)
+# a = int(input("Enter first number: "))
+# b = int(input("Enter second number: "))
+# hcf = 1
+# for i in range(1, min(a, b) + 1):
+#     if a % i == 0 and b % i == 0:
+#         hcf = i
+# print("HCF =", hcf)
+
 
 
 # 18. Check if a number is Armstrong.
-# n = int(input())
-# temp = n
-# s = 0
-# while temp > 0:
-#     d = temp % 10
-#     s += d**3
-#     temp //= 10
-# if s == n:
-#     print("Armstrong")
+# n=156
+# temp=n
+# sum=0
+# while temp>0:
+#     d=temp%10
+#     sum+=d**3
+#     temp//=10
+# if sum==n:
+#     print("armstrong")
 # else:
-#     print("Not Armstrong")
+#     print("not")
 
 
 # 19. Check if a number is perfect. 
@@ -171,10 +182,18 @@ else:
 
 
 
+
+
+# n=12
+# fact=1
+# for i in range(1,n+1):
+#     fact *=i
+# print(fact)
+
 # 20. Print multiplication table of a number.
-# num=7
+# n=23
 # for i in range(1,11):
-#     print(num*i)
+#     print(i*n)
 
 # 21. Print all even numbers in a range. 
 # for i in range(1,21):
@@ -183,9 +202,10 @@ else:
 
 
 # 22. Print all odd numbers in a range. 
-# for i in range(1,21):
-#     if i % 2 != 0:
+# for i in range(1,30):
+#     if i%2!=0:
 #         print(i)
+
 
 
 # 23. Check if a year is leap year. 
@@ -197,20 +217,18 @@ else:
 
 
 # 24. Count the number of words in a sentence. 
-# s = input()
-# words = s.split()
-# print(len(words))
+# s="Sai Sachil Pawar"
+# word=s.split()
+# print(len(word))
 
 
 # 25. Remove duplicates from a list. 
-# numbers = [1, 2, 3, 2, 4, 1, 5]
-# unique_numbers = []
-
-# for num in numbers:
-#     if num not in unique_numbers:
-#         unique_numbers.append(num)
-# print("List after removing duplicates:", unique_numbers)
-
+# n=[2,5,4,36,1,4,7,8,5,1]
+# uni=[]
+# for i in n:
+#     if i not in uni:
+#         uni.append(i)
+# print(uni)
 
 # 26. Sort a list without using sort() function. 
 # lst = [4,1,3,2]
@@ -233,24 +251,24 @@ else:
 # print("Second largest element:", second_largest)
 
 # 28. Generate squares of numbers from 1 to N. 
-# n = int(input())
+# n=3
 # for i in range(1,n+1):
 #     print(i*i)
 
 
 # 29. Print ASCII value of each character in string. 
-# s = input()
-# for ch in s:
-#     print(ch, ord(ch))
+# s="SAI"
+# for i in s:
+#    print(i,ord(i)) 
 
 
 # 30. Check if two strings are anagrams. 
-# str1 = "listen"
-# str2 = "silent"
-# if sorted(str1) == sorted(str2):
-#     print("Strings are anagrams")
+# s1="listen"
+# s2="silent"
+# if sorted(s1)==sorted(s2):
+#     print("anagram")
 # else:
-#     print("Strings are not anagrams")
+#     print("no")
 
 
 # 31. Rotate elements of list left by one position. 
@@ -269,20 +287,26 @@ else:
 
 
 # 33. Print list in reverse using a loop only. 
-# numbers = [1, 2, 3, 4, 5]
-# i = len(numbers) - 1
-# while i >= 0:
-#     print(numbers[i], end=" ")
-#     i -= 1
+# n = [1, 2, 3, 4, 5]
+# rev=[]
+# for i in range(len(n)-1,-1,-1):
+#     rev.append(n[i])
+# print(rev)
+
 
 
 # 34. Print prime factors of a number. 
-# n = int(input())
+# n=5
+# fact=1
+# for i in range(1,n+1):
+#     fact*=i
+#     print(fact)
+
+# n=20
 # for i in range(2,n+1):
 #     while n%i==0:
 #         print(i)
 #         n//=i
-
 
 # 35. Print common elements from two lists. 
 # list1 = [1, 2, 3, 4, 5]
@@ -293,12 +317,12 @@ else:
 
 
 # 36. Check if a substring exists inside another string.
-# s = input()
-# sub = input()
+# s="SAi"
+# sub="Ai"
 # if sub in s:
-#     print("Found")
+#     print("Substring")
 # else:
-#     print("Not Found")
+#     print("not")
 
 
 # 37. Find maximum occurring character in a string. 
@@ -324,9 +348,19 @@ else:
 # print(result)
 
 # 40. Calculate power of a number using loop.
-# base = 2
-# exponent = 3
-# result = 1
-# for i in range(exponent):
-#     result = result * base
-# print("Result:", result)
+# base=4
+# exp=2
+# res=1
+# for i in range(exp):
+#     res*=base
+#     print(res)
+
+#41)gieven mobile no is valid or not
+import re
+mo_no=(input("Enter the number: "))
+no=re.fullmatch("[7-9][0-9]{9}",mo_no)
+if no!=None:
+    print("valid")
+else:
+    print("not")
+
